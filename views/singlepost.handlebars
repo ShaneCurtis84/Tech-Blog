@@ -1,0 +1,44 @@
+  <div>
+      <h2>
+        <a href="/post/{{post.id}}">{{post.title}}</a>
+      
+      </h2>
+      <p>Created by
+        {{user.username}}
+        on
+        {{format_date post.date_created}}</p>
+    </div>
+    <div>
+      <p>
+        {{post.content}}
+      </p>
+    </div>
+  </div>
+
+<p id='comment-header'>Comments</p>
+
+{{#each this}}
+<div id='comment-card'>
+    <div>
+        <p id='comment-content'>{{comment_content}}</p>
+        <p id='comment-info'>- ,</p>
+    </div>
+</div>
+{{/each}}
+
+
+
+<section id="form-container">
+
+    <form>
+        <div id='form-input'>
+            <label for="comment-title">Comment</label>
+            <textarea type="text" class='edit-post' id="comment-text" rows="3" cols="50" /></textarea>
+        </div>
+    </form>
+
+    <div>
+        <button id='comment-btn'>Submit</button>
+    </div>
+
+</section>
