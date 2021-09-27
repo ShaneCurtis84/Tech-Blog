@@ -1,40 +1,46 @@
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Blog!</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Blog!</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
 
-  <body>
-    <div>
-      <header>
-        <h1>
+<body>
+  <div>
+    <header>
+      <h1>
 
-          <a href="/">Tech Blog!</a>
-        </h1>
-        <nav>
+        <a href="/">Tech Blog!</a>
+      </h1>
+      <nav>
 
-          <a href="/profile">profile</a>
-          |
+        <a href="/Dashboard">Dashboard</a>
+        |
 
-          <a href="/login">login</a>
+        {{#if loggedIn}}
+                <a href="/" id="logout">Logout</a>
+                {{else}}
+                <a href="/login">Login</a>
+                {{/if}}
 
-          |
+        |
 
-          <a href="/signup">signup</a>
+        <a href="/signup">Signup</a>
 
-        </nav>
-      </header>
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+    <footer>
 
-      </footer>
-    </div>
-
-  </body>
+    </footer>
+  </div>
+  {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
 
 </html>
