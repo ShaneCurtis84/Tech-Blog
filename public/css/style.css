@@ -1,0 +1,64 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0px !important;
+    margin-bottom: -40px !important;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+  }
+
+header{
+    background-image: url(../images/Y8IcBr.png);
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main-header{
+
+    font-size: 75px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #A8A9AD;
+    font-weight: bold;
+
+}
+
+nav{
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+ 
+}
+
+
+nav a{
+    padding:40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #32527b;
+    font-weight: bold;
+}
+
+
+
+main{
+
+    max-width: 1500px;
+    background:#A9A9A9;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+
+}
+
+
+#post-header{
+
+    margin-left:50px;
+}
