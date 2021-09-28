@@ -1,0 +1,14 @@
+<p class="separator" id="welcome-text">Welcome, {{username}}.</p>
+
+<a href="/dashboard/new">
+    <button type="submit" class="button" id="add-post-button">Add New Post</button>
+</a>
+
+{{#if posts.length}}
+<section class="section-header separator">
+    <h2>Your Posts</h2>
+    {{#each posts as |post|}}
+    {{> dashboard-post post}}
+    {{/each}}
+</section>
+{{/if}}

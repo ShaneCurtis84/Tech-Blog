@@ -1,0 +1,29 @@
+<section>
+ <div>
+        <h2>Edit Post</h2>
+    </div>
+
+    <form>
+        <div id='form-input'>
+            <label for="post-title">Title:</label>
+            <textarea type="text" class='edit-post' id="post-title" rows="1" cols="50" />{{post.title}}</textarea>
+        </div>
+
+        <div id='form-input'>
+            <label for="post-content">Content:</label>
+            <textarea type="text" class='edit-post' id="post-content" rows="8"
+                cols="50" />{{post.content}}</textarea>
+        </div>
+    </form>
+
+    <div>
+        <button id='edit-post-btn'>Edit</button>
+    </div>
+
+    <div>
+        <button id='delete-post-btn'>Delete</button>
+    </div>
+</section>
+
+<script src="/js/editpost.js"></script>
+<script src="/js/deletepost.js"></script>

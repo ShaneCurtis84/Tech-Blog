@@ -1,19 +1,12 @@
+{{#if posts.length}}
 {{#each posts as |post|}}
-
-    <div>
-      <h2>
-        <a href="/post/{{post.id}}">{{post.title}}</a>
-      
-      </h2>
-      <p>Created by
-        {{user.username}}
-        on
-        {{format_date date_created}}</p>
-    </div>
-    <div>
-      <p>
-        {{post.content}}
-      </p>
-    </div>
-  </div>
+<section class="post-card">
+    {{> post-info post}}
+    <a href="/post/{{id}}" class="post-link">Continue to post →</a>
+</section>
 {{/each}}
+{{else}}
+<section>
+    <p>No posts have been made yet.</p>
+</section>
+{{/if}}

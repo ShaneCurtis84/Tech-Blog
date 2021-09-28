@@ -1,44 +1,15 @@
-  <div>
-      <h2>
-        <a href="/post/{{post.id}}">{{post.title}}</a>
-      
-      </h2>
-      <p>Created by
-        {{user.username}}
-        on
-        {{format_date post.date_created}}</p>
-    </div>
-    <div>
-      <p>
-        {{post.content}}
-      </p>
-    </div>
-  </div>
-
-<p id='comment-header'>Comments</p>
-
-{{#each this}}
-<div id='comment-card'>
-    <div>
-        <p id='comment-content'>{{comment_content}}</p>
-        <p id='comment-info'>- ,</p>
-    </div>
-</div>
-{{/each}}
-
-
-
-<section id="form-container">
-
+{{> post-info post}}
+<h2>Comments</h2>
+{{#if loggedIn}}
+<section>
     <form>
-        <div id='form-input'>
-            <label for="comment-title">Comment</label>
-            <textarea type="text" class='edit-post' id="comment-text" rows="3" cols="50" /></textarea>
-        </div>
+        <label for="comment">Add a comment:</label><br>
+        <textarea id="comment-text" name="comment" placeholder="Enter your comment here" rows="4" cols="50"></textarea><br>
+        <button class="button" id="comment-btn" type="submit">Submit</button>
     </form>
-
-    <div>
-        <button id='comment-btn'>Submit</button>
-    </div>
-
 </section>
+{{/if}}
+{{> comment-info post.comments}}
+{{#if loggedIn}}
+<script src="/../js/newcomment.js"></script>
+{{/if}}
