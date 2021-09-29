@@ -38,6 +38,8 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 
   - Use the schema.sql file to create the database.
 
+
+ Visit the following link for a deployed version of the app https://obscure-hollows-72568.herokuapp.com/
   
   
 
