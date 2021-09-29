@@ -58,7 +58,155 @@ main{
 }
 
 
-#post-header{
+.post-container{
+    border:1px solid #32527b;
+    margin-top: 15px;
+    margin-bottom: 5px;
 
-    margin-left:50px;
+}
+
+.post-header{
+
+    margin-left:150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.post-header a{
+    text-decoration: none;
+    color: #32527b;
+}
+
+
+
+.post-body{
+   
+    margin-left:200px;
+    margin-right: 30px;
+
+}
+
+.post-link{
+    color: #32527b;
+    text-decoration: none;
+}
+
+.comments{
+    margin-left:200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.comment-header{
+    margin-left:150px;
+    color: #32527b;
+}
+
+
+.login-form{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-header{
+    color: #32527b;
+    font-size: 35px;
+}
+
+#form-input{
+    font-size: 20px;
+    
+}
+
+#username{
+    background-color:#A8A9AD;
+    padding:3px;
+    margin:3px;
+}
+
+#password{
+    background-color:#A8A9AD;
+    padding:3px;
+    margin:3px;
+
+}
+
+#log-in-btn{
+    background-color: black;
+    color: #32527b;
+    font-weight: bold;
+    padding:5px;
+}
+
+#sign-up-btn{
+    background-color: black;
+    color: #32527b;
+    font-weight: bold;
+    padding:5px;
+}
+
+.comment-form{
+
+    margin-left:200px;
+}
+
+.dashboard-body{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-post-button{
+    background-color: black;
+    color: #32527b;
+    font-weight: bold;
+    padding:5px;
+
+}
+
+#newpost-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dash-post{
+
+    text-decoration:none;
+    color:#32527b;
+}
+
+
+.edit-post{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edit-post-btn{
+    background-color: black;
+    color: #32527b;
+    font-weight: bold;
+    padding:5px;
+    margin:3px;
+
+}
+
+#delete-post-btn{
+    background-color: black;
+    color: #32527b;
+    font-weight: bold;
+    padding:5px;
+    margin:3px;
 }

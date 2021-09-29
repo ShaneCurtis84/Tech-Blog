@@ -1,8 +1,8 @@
 {{> post-info post}}
-<h2>Comments</h2>
+<h2 class="comment-header">Comments</h2>
 {{#if loggedIn}}
 <section>
-    <form>
+    <form class="comment-form">
         <label for="comment">Add a comment:</label><br>
         <textarea id="comment-text" name="comment" placeholder="Enter your comment here" rows="4" cols="50"></textarea><br>
         <button class="button" id="comment-btn" type="submit">Submit</button>
