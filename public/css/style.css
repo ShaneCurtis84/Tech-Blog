@@ -210,3 +210,14 @@ main{
     padding:5px;
     margin:3px;
 }
+
+#no-posts{
+
+    text-align:center;
+    font-size:25px;
+}
+
+#login-link{
+    text-decoration: none;
+    color: #32527b;
+}
